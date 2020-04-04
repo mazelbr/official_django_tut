@@ -1,0 +1,8 @@
+<h1>Here are the results</h1>
+<p>{{question.question_text}}</p>
+<ul>
+    {%for choice in choices%}
+    <li>{{choice.choice_text}}: {{choice.votes}}</li>
+    {%endfor%}
+</ul>
+
